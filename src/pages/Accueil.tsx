@@ -8,25 +8,25 @@ const Accueil = () => {
       title: "MAMBY DIOMANDÉ entre la production de concert, Les majors et le SIMA",
       url: "https://www.youtube.com/watch?v=IuaTpzfWnIQ&t=15s",
       platform: "YouTube",
-      thumbnail: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800"
+      thumbnail: "/im-1.png"
     },
     {
       title: "Interview avec Investir au Pays",
       url: "https://www.youtube.com/watch?v=gUevMYk2X-Q",
       platform: "YouTube",
-      thumbnail: "https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800"
+      thumbnail: "/im-2.png"
     },
     {
       title: "Mamby discussion avec le Président Macron",
       url: "https://www.instagram.com/p/DI6tZpso9uV/",
       platform: "Instagram",
-      thumbnail: "https://images.pexels.com/photos/3184293/pexels-photo-3184293.jpeg?auto=compress&cs=tinysrgb&w=800"
+      thumbnail: "/im-3.png"
     },
     {
       title: "Interview sur Jeune Afrique",
       url: "https://www.jeuneafrique.com/auteurs/m-diomande/",
       platform: "Jeune Afrique",
-      thumbnail: "https://images.pexels.com/photos/3184294/pexels-photo-3184294.jpeg?auto=compress&cs=tinysrgb&w=800"
+      thumbnail: "/im-4.png"
     }
   ];
 
