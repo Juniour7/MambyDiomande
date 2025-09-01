@@ -8,35 +8,35 @@ const Entreprise = () => {
       title: "Salon des industries musicales de l'Afrique francophone (SIMA)",
       role: "Fondateur",
       description: "Plateforme dédiée à la promotion, la formation et aux opportunités d'affaires dans l'écosystème musical africain.",
-      icon: Building2,
+      logo: '/salon.jpg',
       color: "from-yellow-400 to-orange-500"
     },
     {
       title: "Société de Développement et d'Intermédiation en Côte d'Ivoire (SDICI)",
       role: "Associé-Gérant",
       description: "Formalisation du secteur des ICC en Côte d'Ivoire pour créer un environnement structuré et durable.",
-      icon: Globe,
+      logo: '',
       color: "from-blue-400 to-purple-500"
     },
     {
       title: "Universal Music Africa",
       role: "Live & Brand West Africa Director",
       description: "Direction des activités live et brand pour l'Afrique de l'Ouest et les pays francophones.",
-      icon: Award,
+      logo: '/universal.jpg',
       color: "from-green-400 to-blue-500"
     },
     {
       title: "MNGRS.AI",
       role: "Board Member",
       description: "Le premier manager d'artiste alimenté par l'IA, révolutionnant la gestion artistique.",
-      icon: Users,
+      logo: '/img.jpg',
       color: "from-purple-400 to-pink-500"
     },
     {
       title: "LEAYA",
       role: "Board Member",
       description: "L'application qui connecte l'Afrique, favorisant les échanges et collaborations continentales.",
-      icon: Handshake,
+      logo: '/leaya.png',
       color: "from-red-400 to-yellow-500"
     }
   ];
@@ -92,14 +92,13 @@ const Entreprise = () => {
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {businesses.map((business, index) => {
-              const IconComponent = business.icon;
               return (
                 <div 
                   key={index}
                   className="group relative bg-gray-800/30 backdrop-blur-sm rounded-3xl p-8 hover:bg-gray-700/30 transition-all duration-500 hover:transform hover:scale-105 border border-gray-700/50 hover:border-yellow-400/30"
                 >
                   <div className={`w-16 h-16 rounded-2xl bg-gradient-to-r ${business.color} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                    <IconComponent size={32} className="text-white" />
+                    <img src={business.logo} alt="" className='rounded-xl w-full h-full object-cover' />
                   </div>
                   
                   <div className="mb-4">

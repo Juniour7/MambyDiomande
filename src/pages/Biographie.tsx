@@ -1,11 +1,11 @@
 import React from 'react';
-import { GraduationCap, Briefcase, Star, Target, Users, Globe, ArrowRight } from 'lucide-react';
+import {  Briefcase, Star, Target, Users, Globe, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Biographie = () => {
   const education = [
-    { school: "HEC Paris", degree: "Formation Executive", icon: GraduationCap },
-    { school: "INP-HB", degree: "Diplômé", icon: GraduationCap }
+    { school: "HEC Paris", degree: "Formation Executive", logo: '/hec.png' },
+    { school: "INP-HB", degree: "Diplômé", logo: '/in.png' }
   ];
 
   const timeline = [
@@ -63,11 +63,14 @@ const Biographie = () => {
               <div className="space-y-4">
                 <h3 className="text-yellow-400 font-semibold text-lg mb-4">Formation</h3>
                 {education.map((edu, index) => {
-                  const IconComponent = edu.icon;
                   return (
                     <div key={index} className="flex items-center space-x-4 p-4 bg-gray-800/30 rounded-xl">
-                      <div className="w-12 h-12 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full flex items-center justify-center">
-                        <IconComponent size={24} className="text-black" />
+                      <div className="w-12 h-12 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-xl flex items-center justify-center">
+                        <img 
+                          src={edu.logo} 
+                          alt=""
+                          className='w-full h-full rounded-xl object-contain' 
+                        />
                       </div>
                       <div>
                         <h4 className="text-white font-semibold">{edu.school}</h4>
